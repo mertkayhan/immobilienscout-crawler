@@ -5,11 +5,11 @@ Given a query link this project automatically crawls the data and sends automati
 
 We can use crontab to schedule a crawling job on regular intervals.
 
-* ```bash export ADDR=<query-address> ```
-* ```bash export SENDER=<email-address> ```
-* ```bash crontab -e ```
-* Add the line ```bash */<interval> * * * * cd <repository-dir> && /usr/local/bin/ python3.7 main.py --addr $ADDR --sender $SENDER ```
-* Check the scheduled jobs using ```bash crontab -l ```
+* ```export ADDR=<query-address>```
+* ```export SENDER=<email-address>```
+* ```crontab -e ```
+* Add the line ```*/<interval> * * * * cd <repository-dir> && /usr/local/bin/ python3.7 main.py --addr $ADDR --sender $SENDER```
+* Check the scheduled jobs using ```crontab -l```
 
 ## Dependencies
 
